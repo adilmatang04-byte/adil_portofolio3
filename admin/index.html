@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Admin — Adil Portfolio</title><link rel="stylesheet" href="../assets/admin.css"></head>
+<body>
+<div class="admin-shell">
+  <aside><div class="admin-brand">AMC<span> / ADMIN</span></div><p>Portfolio Control Room</p>
+    <a href="../" target="_blank">↗ View website</a>
+    <div class="security">LOCAL MODE<br><small>Untuk mode online yang benar-benar aman, sambungkan Supabase Auth.</small></div>
+  </aside>
+  <main><div class="top"><div><span class="eyebrow">CONTROL ROOM</span><h1>Edit Portfolio</h1></div><button id="save">Save changes</button></div>
+    <div id="status"></div>
+    <section class="panel"><h2>Identity</h2><label>Nama lengkap<input id="name"></label><label>Profesi<input id="profession"></label><label>Headline<input id="tagline"></label><label>About / bio<textarea id="about" rows="7"></textarea></label></section>
+    <section class="panel"><h2>Foto profil</h2><p class="hint">Versi dasar ini menyimpan perubahan di browser. Untuk foto online + login admin, ikuti konfigurasi Supabase di README.</p><input id="photo" type="file" accept="image/*"><div id="preview"></div></section>
+    <section class="panel"><h2>Theme</h2><div class="colors"><label>Accent<input id="accent" type="color" value="#d9ff55"></label><label>Background<input id="bg" type="color" value="#08090a"></label></div></section>
+  </main>
+</div><script src="admin.js"></script></body></html>
